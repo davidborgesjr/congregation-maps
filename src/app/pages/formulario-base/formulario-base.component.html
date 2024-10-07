@@ -1,0 +1,42 @@
+<form [formGroup]="form">
+  <p>
+    <mat-form-field class="example-full-width">
+      <mat-label>Nome do dirigente</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let dirigente of dirigentes" [value]="dirigente.id">{{dirigente.nome}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </p>
+
+  <p>
+    <mat-form-field class="form-group">
+      <mat-label>Território</mat-label>
+      <mat-select class="form-control" id="power" required (selectionChange)="onChangeOpcaoTerritorio($event)">
+        <mat-option *ngFor="let territorio of listaTerritorios" [value]="territorio.numero">{{getNomeQuadra(territorio)}}</mat-option>
+      </mat-select>
+    </mat-form-field>      
+  </p>
+
+  <ng-container *ngIf="territorioEscolhido">
+    <p>
+      <mat-form-field>
+        <mat-label>Data de Início</mat-label>
+        <input matInput [matDatepicker]="pickerDataInicio" id="dataInicio" />
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="pickerDataInicio"></mat-datepicker-toggle>
+        <mat-datepicker #pickerDataInicio></mat-datepicker>
+      </mat-form-field>
+    </p>
+    
+    <p>
+      <mat-form-field>
+        <mat-label>Data de Término</mat-label>
+        <input matInput [matDatepicker]="pickerDataTermino" id="dataTermino" />
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="pickerDataTermino"></mat-datepicker-toggle>
+        <mat-datepicker #pickerDataTermino></mat-datepicker>
+      </mat-form-field>
+    </p>  
+  </ng-container>
+
+</form>

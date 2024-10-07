@@ -1,0 +1,106 @@
+{
+  "dirigentes": [
+    {
+      "id": "1",
+      "nome": "Afonso Freitas"
+    },
+    {
+      "id": "2",
+      "nome": "Alexandre Eleutério"
+    },
+    {
+      "id": "3",
+      "nome": "Alfredo Robattini"
+    },
+    {
+      "id": "4",
+      "nome": "David Borges"
+    },
+    {
+      "id": "5",
+      "nome": "David Wallace"
+    },
+    {
+      "id": "6",
+      "nome": "Denilson Balbi"
+    },
+    {
+      "id": "7",
+      "nome": "Dennis Damasceno"
+    },
+    {
+      "id": "8",
+      "nome": "Érick Cézar"
+    },
+    {
+      "id": "9",
+      "nome": "Erick Matos"
+    },
+    {
+      "id": "10",
+      "nome": "Jedeon Cabral"
+    },
+    {
+      "id": "11",
+      "nome": "José Alfredo"
+    },
+    {
+      "id": "12",
+      "nome": "Jonas Barbosa"
+    },
+    {
+      "id": "13",
+      "nome": "Manoel Souza"
+    },
+    {
+      "id": "14",
+      "nome": "Emanuel Richard"
+    },
+    {
+      "id": "15",
+      "nome": "Nilson Dias"
+    },
+    {
+      "id": "16",
+      "nome": "Robson Gomes"
+    },
+    {
+      "id": "17",
+      "nome": "Linderson Casanova"
+    },
+    {
+      "id": "9c15",
+      "name": "Novo Dirigente"
+    }
+  ],
+  "territorios": [
+    {
+      "numero": 16,
+      "localidade": "Francisco Queiroz e Ianomani",
+      "imageSrc": "/G1_mapa16.jpg",
+      "numeroQuadras": 6,
+      "id": "2845"
+    },
+    {
+      "numero": 17,
+      "localidade": "Novo Israel",
+      "imageSrc": "/G1_mapa17.jpg",
+      "numeroQuadras": 2,
+      "id": "2845"
+    }
+  ],
+  "territorios-trabalhados": [
+    {
+      "id": "3cf6",
+      "territorioId": 16,
+      "quadras": [
+        {
+          "id": 1,
+          "terminado": true,
+          "observacoes": "",
+          "dataTrabalhada": ""
+        }
+      ]
+    }
+  ]
+}

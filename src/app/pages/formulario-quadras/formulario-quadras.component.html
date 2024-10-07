@@ -1,0 +1,23 @@
+
+<div class="component" *ngIf="territorioSelecionado">
+    <form [formGroup]="form">            
+        <div class="div-image" style="float: left; width: 50%">
+            <img [src]="territorioSelecionado.imageSrc" alt="Mapa">
+        </div>
+        <div class="div-image" style="float: right; width: 50%" *ngIf="listaQuadras">
+        <h3>Quadras Trabalhadas</h3>
+        <div formArrayName="listaQuadras" *ngFor="let quadra of listaQuadras.controls; let i=index">
+        <p [formGroupName]="i">
+            <mat-checkbox class="example-margin" formControlName="trabalhado">
+                
+            </mat-checkbox>
+            <mat-form-field class="example-full-width">
+                <mat-label>Adicione observações das quadras trabalhadas</mat-label>
+                <input formControlName="observacoes"  matInput placeholder="Ex. It makes me feel..."/>
+            </mat-form-field>
+        </p>
+        </div>
+        <button (click)="printValue()">Atualizar quadras</button>
+        </div>
+    </form>
+  </div>
